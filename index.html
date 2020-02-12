@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>symbol</title>
+    <style type="text/css">
+    svg{
+    padding: 0;
+    margin: 0;}
+        .l1{
+          fill:blue;
+        }
+        #l11{
+            transform: scale(4)
+        }
+        .l2{
+          fill:pink;  
+        }
+        .l3{
+            fill:indianred;
+        }
+        #l22{
+            height: 300px;
+            position: absolute;
+            top: 0;
+            right: 0;}
+        #l33{
+            height: 800px;
+            transform: rotate(20deg);
+        }
+    </style>
+    
+</head>
+<body>
+    <svg style="display: none;">
+   <symbol id="lapiz" viewBox="0 0 44 100">     
+	<path d="M38.5,28h-0.75h-1.5H35.5H34v19.82l3,4.52l3-4.52V28H38.5z M36.25,28.38h1.5v19.07h-1.5V28.38z M34.38,28.38h1.13v19.07
+		h-1.13V28.38z M37.61,50.75h-1.22L34.7,48.2h4.6L37.61,50.75z M39.63,47.45H38.5V28.38h1.13V47.45z" />
+		</symbol>
+
+</svg>
+<svg id="l11">
+    <use xlink:href="#lapiz" class="l1" />
+</svg>
+
+<svg id="l22">
+    <use xlink:href="#lapiz" class="l2" />  
+</svg>
+<svg id="l33">
+    <use xlink:href="#lapiz" class="l3" />
+</svg>
+</body>
+</html>
